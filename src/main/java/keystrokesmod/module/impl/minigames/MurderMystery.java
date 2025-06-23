@@ -107,11 +107,12 @@ public class MurderMystery extends Module {
                             }
                         }
                         override = true;
-                        int rgb = Color.green.getRGB();
+                        //int rgb = Color.green.getRGB();
                         if (murderers.contains(en) && highlightMurderer.isToggled()) {
                             rgb = Color.red.getRGB();
                         } else if (hasBow.contains(en) && highlightBow.isToggled()) {
-                            rgb = Color.orange.getRGB();
+                            rgb = Color.green.getRGB();
+                            //previously Color.orange.getRBG();
                         } else if (!highlightInnocent.isToggled()) {
                             continue;
                         }
